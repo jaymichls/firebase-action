@@ -1,6 +1,6 @@
 name: 'GitHub Action for Firebase'
-author: 'Jeremy Shore'
-description: 'Wraps the firebase-tools CLI to enable common commands.'
+author: 'OC Fulfillment Team'
+description: 'Wraps the firebase-tools CLI to enable common commands together with Java in order to start the firebase emulator.'
 branding:
   icon: 'package'
   color: 'gray-dark'
