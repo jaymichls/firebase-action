@@ -59,9 +59,9 @@ jobs:
         with:
           name: dist
       - name: Deploy to Firebase
-        uses: w9jds/firebase-action@master
+        uses: jaymichls/firebase-action@master
         with:
-          args: deploy --only hosting
+          args: firebase deploy --only hosting
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
 ```
