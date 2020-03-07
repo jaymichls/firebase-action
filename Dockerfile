@@ -13,10 +13,8 @@ LABEL com.github.actions.color="gray-dark"
 ENV JAVA_HOME="/opt/jdk"
 ENV PATH="${PATH}:${JAVA_HOME}/bin"
 
-RUN apt-get update && apt-get install -y wget
+RUN apt-get update && apt-get install -y openjdk-8-jre
 RUN npm install -g firebase-tools
-# RUN mkdir -p ${JAVA_HOME} && wget -qO- https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.6%2B10/OpenJDK11U-jdk_x64_linux_hotspot_11.0.6_10.tar.gz | tar xvz -C ${JAVA_HOME} --strip-components=1
-RUN apt-get install openjdk-8-jre
 
 COPY LICENSE README.md /
 COPY "entrypoint.sh" "/entrypoint.sh"
